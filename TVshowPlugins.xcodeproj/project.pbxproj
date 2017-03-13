@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A01709B01E719F3A008DC24A /* DeckLinkInputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01709AE1E719F3A008DC24A /* DeckLinkInputDelegate.cpp */; };
+		A000724B1E763F7300F62D58 /* DeckLinkInputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00072491E763F7300F62D58 /* DeckLinkInputDelegate.cpp */; };
 		A01709B31E71A010008DC24A /* DeckLinkOutputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01709B11E71A010008DC24A /* DeckLinkOutputDelegate.cpp */; };
 		A01709BB1E74C506008DC24A /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01709BA1E74C506008DC24A /* DeckLinkAPIDispatch.cpp */; };
 		A01709BE1E74C559008DC24A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01709BD1E74C559008DC24A /* CoreFoundation.framework */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A01709AE1E719F3A008DC24A /* DeckLinkInputDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeckLinkInputDelegate.cpp; sourceTree = "<group>"; };
-		A01709AF1E719F3A008DC24A /* DeckLinkInputDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DeckLinkInputDelegate.hpp; sourceTree = "<group>"; };
+		A00072491E763F7300F62D58 /* DeckLinkInputDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeckLinkInputDelegate.cpp; path = Source/DeckLinkInputDelegate.cpp; sourceTree = "<group>"; };
+		A000724A1E763F7300F62D58 /* DeckLinkInputDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DeckLinkInputDelegate.hpp; path = Source/DeckLinkInputDelegate.hpp; sourceTree = "<group>"; };
 		A01709B11E71A010008DC24A /* DeckLinkOutputDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeckLinkOutputDelegate.cpp; path = Source/DeckLinkOutputDelegate.cpp; sourceTree = "<group>"; };
 		A01709B21E71A010008DC24A /* DeckLinkOutputDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DeckLinkOutputDelegate.hpp; path = Source/DeckLinkOutputDelegate.hpp; sourceTree = "<group>"; };
 		A01709BA1E74C506008DC24A /* DeckLinkAPIDispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeckLinkAPIDispatch.cpp; path = include/DeckLinkAPIDispatch.cpp; sourceTree = "<group>"; };
@@ -82,13 +82,13 @@
 		A0F5434B1E7194D3001AE9AD /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A00072491E763F7300F62D58 /* DeckLinkInputDelegate.cpp */,
+				A000724A1E763F7300F62D58 /* DeckLinkInputDelegate.hpp */,
 				A01709BA1E74C506008DC24A /* DeckLinkAPIDispatch.cpp */,
 				A0F5434F1E719A30001AE9AD /* TVCardManager.cpp */,
 				A0F543501E719A30001AE9AD /* TVCardManager.hpp */,
 				A0F543531E719AE1001AE9AD /* BMTVCardManager.cpp */,
 				A0F543541E719AE1001AE9AD /* BMTVCardManager.hpp */,
-				A01709AE1E719F3A008DC24A /* DeckLinkInputDelegate.cpp */,
-				A01709AF1E719F3A008DC24A /* DeckLinkInputDelegate.hpp */,
 				A01709B11E71A010008DC24A /* DeckLinkOutputDelegate.cpp */,
 				A01709B21E71A010008DC24A /* DeckLinkOutputDelegate.hpp */,
 			);
@@ -174,7 +174,7 @@
 				A01709B31E71A010008DC24A /* DeckLinkOutputDelegate.cpp in Sources */,
 				A01709BB1E74C506008DC24A /* DeckLinkAPIDispatch.cpp in Sources */,
 				A0F543551E719AE1001AE9AD /* BMTVCardManager.cpp in Sources */,
-				A01709B01E719F3A008DC24A /* DeckLinkInputDelegate.cpp in Sources */,
+				A000724B1E763F7300F62D58 /* DeckLinkInputDelegate.cpp in Sources */,
 				A0F543511E719A30001AE9AD /* TVCardManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
