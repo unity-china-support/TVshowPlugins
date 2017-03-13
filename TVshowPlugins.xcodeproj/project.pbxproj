@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A01709B01E719F3A008DC24A /* DeckLinkInputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01709AE1E719F3A008DC24A /* DeckLinkInputDelegate.cpp */; };
+		A01709B31E71A010008DC24A /* DeckLinkOutputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01709B11E71A010008DC24A /* DeckLinkOutputDelegate.cpp */; };
+		A01709BB1E74C506008DC24A /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01709BA1E74C506008DC24A /* DeckLinkAPIDispatch.cpp */; };
+		A01709BE1E74C559008DC24A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01709BD1E74C559008DC24A /* CoreFoundation.framework */; };
+		A0F5434E1E7197FE001AE9AD /* include in Resources */ = {isa = PBXBuildFile; fileRef = A0F5434D1E7197FE001AE9AD /* include */; };
+		A0F543511E719A30001AE9AD /* TVCardManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F5434F1E719A30001AE9AD /* TVCardManager.cpp */; };
+		A0F543551E719AE1001AE9AD /* BMTVCardManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F543531E719AE1001AE9AD /* BMTVCardManager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A01709AE1E719F3A008DC24A /* DeckLinkInputDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeckLinkInputDelegate.cpp; sourceTree = "<group>"; };
+		A01709AF1E719F3A008DC24A /* DeckLinkInputDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DeckLinkInputDelegate.hpp; sourceTree = "<group>"; };
+		A01709B11E71A010008DC24A /* DeckLinkOutputDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeckLinkOutputDelegate.cpp; path = Source/DeckLinkOutputDelegate.cpp; sourceTree = "<group>"; };
+		A01709B21E71A010008DC24A /* DeckLinkOutputDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DeckLinkOutputDelegate.hpp; path = Source/DeckLinkOutputDelegate.hpp; sourceTree = "<group>"; };
+		A01709BA1E74C506008DC24A /* DeckLinkAPIDispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeckLinkAPIDispatch.cpp; path = include/DeckLinkAPIDispatch.cpp; sourceTree = "<group>"; };
+		A01709BD1E74C559008DC24A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A0F543421E71945F001AE9AD /* TVshowPlugins.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVshowPlugins.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F543451E71945F001AE9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F5434D1E7197FE001AE9AD /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		A0F5434F1E719A30001AE9AD /* TVCardManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TVCardManager.cpp; path = Source/TVCardManager.cpp; sourceTree = "<group>"; };
+		A0F543501E719A30001AE9AD /* TVCardManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TVCardManager.hpp; path = Source/TVCardManager.hpp; sourceTree = "<group>"; };
+		A0F543531E719AE1001AE9AD /* BMTVCardManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BMTVCardManager.cpp; path = Source/BMTVCardManager.cpp; sourceTree = "<group>"; };
+		A0F543541E719AE1001AE9AD /* BMTVCardManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BMTVCardManager.hpp; path = Source/BMTVCardManager.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0F5433F1E71945F001AE9AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01709BE1E74C559008DC24A /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01709BC1E74C559008DC24A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A01709BD1E74C559008DC24A /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0F543391E71945F001AE9AD = {
+			isa = PBXGroup;
+			children = (
+				A0F5434C1E7197D7001AE9AD /* BMSDK */,
+				A0F5434B1E7194D3001AE9AD /* Source */,
+				A0F543441E71945F001AE9AD /* TVshowPlugins */,
+				A0F543431E71945F001AE9AD /* Products */,
+				A01709BC1E74C559008DC24A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0F543431E71945F001AE9AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0F543421E71945F001AE9AD /* TVshowPlugins.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0F543441E71945F001AE9AD /* TVshowPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				A0F543451E71945F001AE9AD /* Info.plist */,
+			);
+			path = TVshowPlugins;
+			sourceTree = "<group>";
+		};
+		A0F5434B1E7194D3001AE9AD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A01709BA1E74C506008DC24A /* DeckLinkAPIDispatch.cpp */,
+				A0F5434F1E719A30001AE9AD /* TVCardManager.cpp */,
+				A0F543501E719A30001AE9AD /* TVCardManager.hpp */,
+				A0F543531E719AE1001AE9AD /* BMTVCardManager.cpp */,
+				A0F543541E719AE1001AE9AD /* BMTVCardManager.hpp */,
+				A01709AE1E719F3A008DC24A /* DeckLinkInputDelegate.cpp */,
+				A01709AF1E719F3A008DC24A /* DeckLinkInputDelegate.hpp */,
+				A01709B11E71A010008DC24A /* DeckLinkOutputDelegate.cpp */,
+				A01709B21E71A010008DC24A /* DeckLinkOutputDelegate.hpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A0F5434C1E7197D7001AE9AD /* BMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5434D1E7197FE001AE9AD /* include */,
+			);
+			name = BMSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0F543411E71945F001AE9AD /* TVshowPlugins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F543481E71945F001AE9AD /* Build configuration list for PBXNativeTarget "TVshowPlugins" */;
+			buildPhases = (
+				A0F5433E1E71945F001AE9AD /* Sources */,
+				A0F5433F1E71945F001AE9AD /* Frameworks */,
+				A0F543401E71945F001AE9AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVshowPlugins;
+			productName = TVshowPlugins;
+			productReference = A0F543421E71945F001AE9AD /* TVshowPlugins.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0F5433A1E71945F001AE9AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Zhipeng Sun";
+				TargetAttributes = {
+					A0F543411E71945F001AE9AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0F5433D1E71945F001AE9AD /* Build configuration list for PBXProject "TVshowPlugins" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0F543391E71945F001AE9AD;
+			productRefGroup = A0F543431E71945F001AE9AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0F543411E71945F001AE9AD /* TVshowPlugins */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0F543401E71945F001AE9AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F5434E1E7197FE001AE9AD /* include in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0F5433E1E71945F001AE9AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01709B31E71A010008DC24A /* DeckLinkOutputDelegate.cpp in Sources */,
+				A01709BB1E74C506008DC24A /* DeckLinkAPIDispatch.cpp in Sources */,
+				A0F543551E719AE1001AE9AD /* BMTVCardManager.cpp in Sources */,
+				A01709B01E719F3A008DC24A /* DeckLinkInputDelegate.cpp in Sources */,
+				A0F543511E719A30001AE9AD /* TVCardManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0F543461E71945F001AE9AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A0F543471E71945F001AE9AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A0F543491E71945F001AE9AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = include;
+				INFOPLIST_FILE = TVshowPlugins/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = unity3d.TVshowPlugins;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A0F5434A1E71945F001AE9AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = include;
+				INFOPLIST_FILE = TVshowPlugins/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = unity3d.TVshowPlugins;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0F5433D1E71945F001AE9AD /* Build configuration list for PBXProject "TVshowPlugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F543461E71945F001AE9AD /* Debug */,
+				A0F543471E71945F001AE9AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F543481E71945F001AE9AD /* Build configuration list for PBXNativeTarget "TVshowPlugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F543491E71945F001AE9AD /* Debug */,
+				A0F5434A1E71945F001AE9AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0F5433A1E71945F001AE9AD /* Project object */;
+}
