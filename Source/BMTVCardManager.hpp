@@ -10,25 +10,80 @@
 #define BMTVCardManager_hpp
 
 #include <stdio.h>
-#include "DeckLinkAPI.h"
-#include "DeckLinkInputDelegate.hpp"
+#include "DeckLinkAPI_h.h"
+//#include "DeckLinkInputDelegate.hpp"
 #include "DeckLinkOutputDelegate.hpp"
+
+#ifdef TVSHOWPLUGIN_EXPORTS
+#define DLL_EXPORT __declspec(dllexport)
+#else
+#define DLL_EXPORT 
+#endif
 
 class BMTVCardManager
 {
+	static BMTVCardManager* s_instance;
+public:
+	static BMTVCardManager* GetBMManager();
     bool Initialize();
-    bool CreateDeckLinkInput();
+    //bool CreateDeckLinkInput();
     bool CreateDeckLinkOutput();
-    IDeckLinkIterator*				m_deckLinkIterator;
+	DeckLinkOutputDelegate* GetOutputDL() { return m_deckLinkOutput; }
+
     IDeckLink*                      m_deckLink;
-    DeckLinkInputDelegate*          m_deckLinkInput;
+    //DeckLinkInputDelegate*          m_deckLinkInput;
     DeckLinkOutputDelegate*          m_deckLinkOutput;
 };
 
 extern "C" {
-    bool BMD_DLOutput_Initialize ();
-    char* BMD_DLOutput_GetFrameBuffer();
-    BMD_DLOutput_
+	DLL_EXPORT bool BMD_DLOutput_Initialize()
+	{
+		if (!BMTVCardManager::GetBMManager()->Initialize())
+			return false;
+		if (!BMTVCardManager::GetBMManager()->CreateDeckLinkOutput())
+			return false;
+		return true;
+	}
+
+	DLL_EXPORT unsigned int BMD_DLOutput_GetFrameWidth()
+	{
+		DeckLinkOutputDelegate* outputDL = BMTVCardManager::GetBMManager()->GetOutputDL();
+		if (outputDL)
+		{
+			return outputDL->GetFrameWidth();
+		}
+		return 0;
+	}
+
+	DLL_EXPORT unsigned int BMD_DLOutput_GetFrameHeight()
+	{
+		DeckLinkOutputDelegate* outputDL = BMTVCardManager::GetBMManager()->GetOutputDL();
+		if (outputDL)
+		{
+			return outputDL->GetFrameHeight();
+		}
+		return 0;
+	}
+
+	DLL_EXPORT char* BMD_DLOutput_BeginSceneUpdate()
+	{
+		DeckLinkOutputDelegate* outputDL = BMTVCardManager::GetBMManager()->GetOutputDL();
+		if (outputDL)
+		{
+			return outputDL->BeginSceneUpdate();
+		}
+		return nullptr;
+	}
+	
+	DLL_EXPORT void BMD_DLOutput_EndSceneUpdate()
+	{
+		DeckLinkOutputDelegate* outputDL = BMTVCardManager::GetBMManager()->GetOutputDL();
+		if (outputDL)
+		{
+			outputDL->EndSceneUpdate();
+		}
+	}
+	
 }
 
 #endif /* BMTVCardManager_hpp */

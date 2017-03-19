@@ -26,7 +26,7 @@
 */
 /* DeckLinkAPIDispatch.cpp */
 
-#include "DeckLinkAPI.h"
+#include "DeckLinkAPI_h.h"
 #include <pthread.h>
 
 #if BLACKMAGIC_DECKLINK_API_MAGIC != 1

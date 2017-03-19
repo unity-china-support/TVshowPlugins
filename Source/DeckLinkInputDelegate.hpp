@@ -10,7 +10,7 @@
 #define DeckLinkInputDelegate_hpp
 
 #include <stdio.h>
-#include "DeckLinkAPI.h"
+#include "DeckLinkAPI_h.h"
 
 class DeckLinkInputDelegate : public IDeckLinkInputCallback
 {
@@ -22,17 +22,19 @@ public:
     bool Deinitialize();
 
     //IDeckLinkInputCallback
-    virtual HRESULT QueryInterface(REFIID iid, LPVOID *ppv) { return E_NOINTERFACE; }
-    virtual ULONG AddRef(void);
-    virtual ULONG  Release(void);
-    virtual HRESULT VideoInputFormatChanged(BMDVideoInputFormatChangedEvents, IDeckLinkDisplayMode*, BMDDetectedVideoInputFormatFlags);
-    virtual HRESULT VideoInputFrameArrived(IDeckLinkVideoInputFrame*, IDeckLinkAudioInputPacket*);
+	virtual HRESULT	STDMETHODCALLTYPE	QueryInterface(REFIID iid, LPVOID *ppv);
+	virtual ULONG	STDMETHODCALLTYPE	AddRef();
+	virtual ULONG	STDMETHODCALLTYPE	Release();
+
+	// IDeckLinkInputCallback interface
+	virtual HRESULT STDMETHODCALLTYPE	VideoInputFormatChanged(/* in */ BMDVideoInputFormatChangedEvents notificationEvents, /* in */ IDeckLinkDisplayMode *newDisplayMode, /* in */ BMDDetectedVideoInputFormatFlags detectedSignalFlags);
+	virtual HRESULT STDMETHODCALLTYPE	VideoInputFrameArrived(/* in */ IDeckLinkVideoInputFrame* videoFrame, /* in */ IDeckLinkAudioInputPacket* audioPacket);
     
 private:
     IDeckLink*                      m_deckLink;
     IDeckLinkInput*                 m_deckLinkInput;
     IDeckLinkDisplayMode*           m_displayMode;
-    //ULONG				m_refCount;
+    ULONG							m_refCount;
     //pthread_mutex_t		m_mutex;
 };
 
